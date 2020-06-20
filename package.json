@@ -5,7 +5,8 @@
   "main": "bin/cli",
   "license": "MIT",
   "keywords": [
-    "hippo-cli"
+    "hippo-cli",
+    "cli"
   ],
   "files": [
     "lib",
