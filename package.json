@@ -10,7 +10,8 @@
   ],
   "files": [
     "lib",
-    "bin"
+    "bin",
+    "components"
   ],
   "bin": {
     "hippo-cli": "bin/cli"
