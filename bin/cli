@@ -1,0 +1,32 @@
+#! /usr/bin/env node
+
+const commander = require("commander");
+const program = new commander.Command();
+// 定义指令
+program
+  .version(require("../package.json").version)
+  .usage("<command> [options]");
+
+program
+  .command("init")
+  .description("create a new project 🔨 🔨 🔨")
+  .option("-i, --item [name]", "Please enter a project name 🔨")
+  .action(({ item }) => {
+    const { action } = require("../lib/init");
+    action(item);
+  });
+
+program
+  .command("create")
+  .description("create a new component from a template 🚚 🚚 🚚")
+  .option("-c, --component [name]", "Please enter a component name 🚚 🚚 🚚")
+  .option(
+    "-p, --path [path]",
+    "Please enter the path to create a component 🚚 🚚 🚚"
+  )
+  .action(({ component, path }) => {
+    const { action } = require("../lib/create");
+    action(component, path);
+  });
+
+program.parse(process.argv);

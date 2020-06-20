@@ -1,0 +1,30 @@
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { I<%= name.replace(/^\S/, s => s.toUpperCase()) %>States } from "./type";
+import "./<%= name %>.scss";
+type I<%= name.replace(/^\S/, s => s.toUpperCase()) %>PropsState = ReturnType<typeof mapStateToProps>;
+type I<%= name.replace(/^\S/, s => s.toUpperCase()) %>DispatchState = ReturnType<typeof mapDispatchToProps>;
+
+type I<%= name.replace(/^\S/, s => s.toUpperCase()) %>Props = I<%= name.replace(/^\S/, s => s.toUpperCase()) %>PropsState & I<%= name.replace(/^\S/, s => s.toUpperCase()) %>DispatchState
+class <%= name.replace(/^\S/, s => s.toUpperCase()) %> extends Component<I<%= name.replace(/^\S/, s => s.toUpperCase()) %>Props,I<%= name.replace(/^\S/, s => s.toUpperCase()) %>States> {
+  readonly state:I<%= name.replace(/^\S/, s => s.toUpperCase()) %>States = {
+    
+  }
+  constructor(props:I<%= name.replace(/^\S/, s => s.toUpperCase()) %>Props){
+    super(props)
+  }
+
+  render() {
+    return <div className="<%= name %>"><%= name.replace(/^\S/, s => s.toUpperCase()) %></div>;
+  }
+
+}
+const mapStateToProps = (state: any) => {
+  return {};
+};
+
+const mapDispatchToProps = (dispatch: Function) => {
+  return {};
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(<%= name.replace(/^\S/, s => s.toUpperCase()) %>);

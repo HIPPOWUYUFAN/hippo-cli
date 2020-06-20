@@ -1,0 +1,23 @@
+{
+  "name": "hippo-cli",
+  "version": "0.1.0",
+  "author": "hippo",
+  "main": "bin/cli",
+  "license": "MIT",
+  "keywords": [
+    "hippo-cli"
+  ],
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "bin": {
+    "hippo-cli": "bin/cli"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^5.1.0",
+    "ejs": "^3.1.3",
+    "inquirer": "^7.2.0"
+  }
+}

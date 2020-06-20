@@ -1,0 +1,3 @@
+export interface I<%= name.replace(/^\S/, s => s.toUpperCase()) %>States{
+    
+}
