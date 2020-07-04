@@ -4,6 +4,9 @@
   "author": "hippo",
   "main": "bin/cli",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/HIPPOWUYUFAN/hippo-cli.git"
+  },
   "keywords": [
     "hippo-cli",
     "cli"
